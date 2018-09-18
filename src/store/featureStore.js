@@ -45,9 +45,11 @@ const setFixtures = (state, action) => {
 };
 
 const selectFixture = (state, action) => {
+	const fixture = action.payload;
 	return {
 		...state,
-		selectedFixture: action.payload ? { ...action.payload } : null
+		selectedFixture: fixture ? { ...fixture } : null,
+		editFixtureForm: fixture === null ? null : state.editFixtureForm
 	};
 };
 
