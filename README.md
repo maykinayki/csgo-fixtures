@@ -1,5 +1,5 @@
 # csgo-fixtures
 
-### Comands
+### Commands
 1. npm install
 2. npm start
